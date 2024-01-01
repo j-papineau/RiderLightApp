@@ -1,0 +1,63 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RiderLightApp.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="RiderLightApp.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="RiderLightApp">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto, *">
+        <Border Grid.Row="0" Height="32">
+            <TextBlock Text = "{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" VerticalAlignment="Center"
+                       Margin="10 0"/>
+        </Border>
+        <SplitView Grid.Row="1" IsPaneOpen="{Binding IsPaneOpen}"
+                   OpenPaneLength="170"
+                   CompactPaneLength="50"
+                   DisplayMode="CompactInline"
+                   Background="#1e1e1e"
+                   PaneBackground="#303030"
+        >
+            <SplitView.Pane>
+                <StackPanel Spacing="10"
+                            Margin="10">
+                    <Button 
+                        Width="32"
+                        Height="32"
+                        Margin="7 10"
+                        Background="SlateGray"
+                        Command="{Binding TriggerPaneCommand}">
+                        <PathIcon Height="11" Data="{StaticResource MenuLines}"></PathIcon>
+                    </Button>
+                    <ListBox Margin="2 0 -100, 0" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedListItem}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+                                <StackPanel Spacing="17" Orientation="Horizontal">
+                                    <PathIcon Width="14" Data="{Binding ListItemIcon}"/>
+                                    <TextBlock Text="{Binding Label}"/>
+                                </StackPanel> 
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+           
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Border CornerRadius="12 0 0 0"
+                        Background="#2d2d2d">
+                    <TransitioningContentControl Content="{Binding CurrentPage}"/>
+                </Border>  
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+
+</Window>

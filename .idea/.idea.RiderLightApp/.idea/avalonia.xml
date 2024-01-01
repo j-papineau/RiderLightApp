@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="RiderLightApp/App.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Assets/Icons.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Views/HomePageView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Views/MainWindow.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Views/ManualLightView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Views/ReactivePageView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
