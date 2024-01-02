@@ -21,6 +21,7 @@ C:\Users\theka\.nuget\packages\avalonia.skia\11.0.6\lib\net6.0\Avalonia.Skia.dll
 C:\Users\theka\.nuget\packages\avalonia.themes.simple\11.0.6\lib\net6.0\Avalonia.Themes.Simple.dll
 C:\Users\theka\.nuget\packages\avalonia.win32\11.0.6\lib\net6.0\Avalonia.Win32.dll
 C:\Users\theka\.nuget\packages\avalonia.x11\11.0.6\lib\net6.0\Avalonia.X11.dll
+C:\Users\theka\.nuget\packages\deadpikle.avaloniaprogressring\0.10.4\lib\net6.0\AvaloniaProgressRing.dll
 C:\Users\theka\.nuget\packages\communitytoolkit.mvvm\8.2.2\lib\net6.0\CommunityToolkit.Mvvm.dll
 C:\Users\theka\.nuget\packages\fluentavaloniaui\2.0.4\lib\net6.0\FluentAvalonia.dll
 C:\Users\theka\.nuget\packages\harfbuzzsharp\7.3.0\lib\net6.0\HarfBuzzSharp.dll
@@ -91,6 +92,7 @@ C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\Syste
 C:\Users\theka\.nuget\packages\system.io.pipelines\6.0.0\lib\net6.0\System.IO.Pipelines.dll
 C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\System.IO.Pipes.AccessControl.dll
 C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\System.IO.Pipes.dll
+C:\Users\theka\.nuget\packages\system.io.ports\8.0.0\lib\net6.0\System.IO.Ports.dll
 C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\System.IO.UnmanagedMemoryStream.dll
 C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\System.Linq.dll
 C:\Users\theka\.nuget\packages\microsoft.netcore.app.ref\6.0.25\ref\net6.0\System.Linq.Expressions.dll

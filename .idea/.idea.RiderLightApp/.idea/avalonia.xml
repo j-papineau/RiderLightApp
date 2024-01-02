@@ -7,6 +7,7 @@
         <entry key="RiderLightApp/Assets/Icons.axaml" value="RiderLightApp/RiderLightApp.csproj" />
         <entry key="RiderLightApp/Views/HomePageView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
         <entry key="RiderLightApp/Views/MainWindow.axaml" value="RiderLightApp/RiderLightApp.csproj" />
+        <entry key="RiderLightApp/Views/ManualLightPageView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
         <entry key="RiderLightApp/Views/ManualLightView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
         <entry key="RiderLightApp/Views/ReactivePageView.axaml" value="RiderLightApp/RiderLightApp.csproj" />
       </map>

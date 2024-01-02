@@ -2,7 +2,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:RiderLightApp.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="RiderLightApp.Views.ManualLightPageView">
-    Manual Light View
+             x:Class="RiderLightApp.Views.ManualLightPageView"
+             x:DataType="viewModels:ManualLightPageViewModel"
+             xmlns:progRing="clr-namespace:AvaloniaProgressRing;assembly=AvaloniaProgressRing"
+             >
+    <StackPanel Margin="10">
+        <TextBlock FontWeight="Bold">Manual Lighting Controls</TextBlock>
+        <Separator Margin="2, 10"></Separator>
+        <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto">
+            <WrapPanel Grid.Row="0" Grid.Column="0">
+                <TextBlock Margin="10" FontWeight="Medium" TextAlignment="Center">ESP Connection</TextBlock>
+                <Ellipse Margin="10"  Fill="{Binding CircleColor}" Width="20" Height="20"/>
+                <Button Margin="10" Command="{Binding ConnectToEspCommand}">Connect</Button>
+            </WrapPanel>
+            <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="1" Grid.Column="0">
+                <ColorPicker IsHexInputVisible="True" Color="{Binding ColorPicker}"></ColorPicker>
+                <TextBlock Text="{Binding ColorDisplay}"></TextBlock>
+                <Button Command="{Binding SendStripOneCommand}">Send Strip 1</Button>
+                <Button Command="{Binding SendStripTwoCommand}">Send Strip 2</Button>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
 </UserControl>

@@ -1,3 +1,11 @@
 
 .idea/.idea.RiderLightApp/.idea/indexLayout.xml
 *.dll
+*.so
+*.json
+*.xml
+*.bin
+*.v2
+*.bin
+*.vsidx
+.vs/RiderLightApp/v17/.suo
